@@ -6,12 +6,51 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
+function CuboidMaker(attr) {
+    this.length = attr.first,
+        this.width = attr.width,
+        this.height = attr.height
+}
+
+
+
 
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   
   Formula for cuboid volume: length * width * height
 */
+
+
+function CuboidMaker(attr) {
+    this.length = attr.first,
+        this.width = attr.width,
+        this.height = attr.height,
+
+}
+CuboidMaker.prototype.volume = function() {
+    return this.volume;
+};
+
+
+
+//function CharacterStats(attr) {
+
+//GameObject.call(this, attr);
+
+//this.healthPoints = attr.healthPoints;
+//};
+
+CharacterStats.prototype = Object.create(GameObject.prototype);
+
+CharacterStats.prototype.takeDamage = function() {
+    return `${this.name}took damage`
+
+};
+
+
+
+
 
 
 /* == Step 3: Surface Area Method ==
@@ -26,8 +65,9 @@
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.   
 */
 
+CuboidMaker = new
+
+
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
+console.log(cuboid.volume()); // 100
 // console.log(cuboid.surfaceArea()); // 130
-
-
